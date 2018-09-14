@@ -1,0 +1,1 @@
+{"spec":{"operations":[{"kind":"from","id":"from0","spec":{"bucket":"telegraf"}},{"kind":"range","id":"range1","spec":{"start":"-1m0s","stop":"now","timeCol":"_time","startCol":"_start","stopCol":"_stop"}}],"edges":[{"parent":"from0","child":"range1"}],"resources":{"priority":"high","concurrency_quota":0,"memory_bytes_quota":0},"now":"2018-09-14T11:58:48.056480931Z"}}
