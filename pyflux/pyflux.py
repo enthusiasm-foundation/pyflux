@@ -36,9 +36,8 @@ def _results(text_results):
 
 class Flux(object):
     """a client for Flux"""
-    def __init__(self, server, port=8093, version='v2'):
-        self.server = server
-        self.port = port
+    def __init__(self, host, port=8093, version='v2'):
+        self.server = host + ":" + port
         self.version = version
 
     def _encode(self, query):
