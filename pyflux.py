@@ -23,14 +23,14 @@ class AST(object):
 def _results(text_results):
     res = []
     for tresult in text_results.split("\n\r\n"):
-        reader = csv.reader(tresult.split('\n'), delimiter=',')
-        headers = next(reader)
-        lines = []
-        for row in reader:
-            lines.append(row)
+        if(tresult!=""):
+            reader = csv.reader(tresult.split('\n'), delimiter=',')
+            headers = next(reader)
+            lines = []
+            for row in reader:
+                lines.append(row)
 
-        res.append(Result(headers, lines))
-
+            res.append(Result(headers, lines))
     return res
 #end
 
