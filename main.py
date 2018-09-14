@@ -3,7 +3,7 @@ from pyflux import Flux
 
 if __name__== "__main__":
 
-    host = 'hackmilan.a.influxcloud.net'
+    host = 'localhost'
     version = 'v2'
 
     f = Flux(host, 8080, version)
