@@ -9,7 +9,7 @@ setup_args = dict (
     url='https://github.com/enthusiasm-foundation/pyflux',
     author='PyFlux Mafia',
     author_email='gianarb@influxdata.com',
-    packages=[ "./" ],
+    packages=[ "pyflux" ],
     install_requires = [ 'setuptools',
                          'pandas',
                          'json2html',

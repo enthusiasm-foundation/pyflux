@@ -5,6 +5,7 @@ import matplotlib.pyplot as plt
 from pyflux import Result
 
 import pandas as pd
+
 class Render(object):
 
     def timeplot(self, results):
